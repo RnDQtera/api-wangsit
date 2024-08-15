@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGI0ODViZTNmOWI1MjFkYmY2YmRmNiIsInNlc3Npb24iOiJkdW1teSEiLCJpYXQiOjE3MjM3MDI4OTAsImV4cCI6MTcyMzc0NjA5MH0.6ywMP9SD19qXfjjKJ2H42DMBLCS56eXAztQxypOp82U'</initValue>
+      <name>token</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-settings-sla.wangs.id/'</initValue>
+      <name>SLA</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
