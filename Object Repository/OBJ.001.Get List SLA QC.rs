@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>New Request</name>
+   <name>OBJ.001.Get List SLA QC</name>
    <tag></tag>
    <elementGuidId>a1dff133-d10f-4469-9f8f-a62d12e987f8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
@@ -35,7 +35,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${sla}settings/sla/qc</restUrl>
+   <restUrl>${sla}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -57,6 +57,13 @@
       <id>397a2051-f447-4ced-9a4e-c9ce5a5a74dc</id>
       <masked>false</masked>
       <name>token</name>
+   </variables>
+   <variables>
+      <defaultValue>'settings/sla/qc'</defaultValue>
+      <description></description>
+      <id>e3f70a07-6466-42ff-9733-3599d2e4bbdf</id>
+      <masked>false</masked>
+      <name>endpoint</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
