@@ -6,12 +6,22 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImR1bW15IiwiaWF0IjoxNzIzNzczMjY2fQ.v3h8nvbxE0DJPqpCT_IkhnljGbjSDWxIwJp40uUHKoA'</initValue>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTRjNDI1M2RkMTAxN2YyODY4OTU3MiIsImlhdCI6MTcyNDA1MzU3NiwiZXhwIjoxNzI0MDk2Nzc2fQ.ujQDwchy7sirkiAMcl2h2Zbcf0dNRf2NlU5AA2CMPCg\n'</initValue>
       <name>token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://dev-api-settings-sla.wangs.id/'</initValue>
       <name>SLA</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-team-member-team.wangs.id/'</initValue>
+      <name>Member_Team</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-settings-role.wangs.id/'</initValue>
+      <name>setting_role</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

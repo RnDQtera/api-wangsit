@@ -17,3 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.click(findTestObject('001 SLA QC/OBJ.001.001.Get List SLA QC', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
+            , ('endpoint') : 'settings/sla/qc']))
+
