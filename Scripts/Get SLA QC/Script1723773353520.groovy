@@ -20,3 +20,12 @@ import org.openqa.selenium.Keys as Keys
 WebUI.click(findTestObject('001 SLA QC/OBJ.001.001.Get List SLA QC', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
             , ('endpoint') : 'settings/sla/qc']))
 
+WebUI.click(findTestObject('001 SLA QC/OBJ.001.002.Get SLA Ticket - Copy', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
+            , ('endpoint') : 'settings/sla/ticket']))
+
+WebUI.click(findTestObject('001 SLA QC/OBJ.001.003.Put SLA QC', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
+            , ('endpoint') : 'settings/sla/qc']))
+
+WebUI.click(findTestObject('001 SLA QC/OBJ.001.004.Put SLA Ticket', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
+            , ('endpoint') : 'settings/sla/ticket']))
+

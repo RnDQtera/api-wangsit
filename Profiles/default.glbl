@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NTRjNDI1M2RkMTAxN2YyODY4OTU3MiIsImlhdCI6MTcyNDA1MzU3NiwiZXhwIjoxNzI0MDk2Nzc2fQ.ujQDwchy7sirkiAMcl2h2Zbcf0dNRf2NlU5AA2CMPCg\n'</initValue>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzgzM2YwMjg3NTRjNGY3NTUzMmYwMCIsImlhdCI6MTcyNDM5NjcxOX0._2YP7q8kZNmJdegSwpFNRcIHs2P-DV9EUhsr9HOmvaw'</initValue>
       <name>token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -23,5 +23,10 @@
       <description></description>
       <initValue>'https://dev-api-settings-role.wangs.id/'</initValue>
       <name>setting_role</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-settings-process.wangs.id/'</initValue>
+      <name>setting_process</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
