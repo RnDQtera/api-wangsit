@@ -39,4 +39,9 @@
       <initValue>'https://dev-api-settings-group-member.wangs.id/'</initValue>
       <name>setting_group_member</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-team-member-account.wangs.id/'</initValue>
+      <name>list_account_member</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

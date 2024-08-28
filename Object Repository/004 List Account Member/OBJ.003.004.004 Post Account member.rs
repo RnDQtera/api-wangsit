@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.003.004.004 Post Create Group Member (BUGS)</name>
+   <name>OBJ.003.004.004 Post Account member</name>
    <tag></tag>
-   <elementGuidId>78578cfa-998b-4d92-937c-d63e59e32284</elementGuidId>
+   <elementGuidId>3d0ca38f-9496-4b18-87fa-39ddc445b78d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;Project New 2\&quot;,\n  \&quot;description\&quot;: \&quot;string\&quot;,\n  \&quot;targetPoint\&quot;: 0,\n  \&quot;totalWorkDays\&quot;: 30,\n  \&quot;typeTargetPoint\&quot;: \&quot;auto\&quot;,\n  \&quot;defaultWorkDays\&quot;: [\n    1,\n    2,\n    3,\n    4,\n    5\n  ],\n  \&quot;workDays\&quot;: {\n    \&quot;2023\&quot;: [\n      \&quot;2023-01-01\&quot;,\n      \&quot;...\&quot;\n    ],\n    \&quot;2024\&quot;: [\n      \&quot;2024-01-04\&quot;,\n      \&quot;...\&quot;\n    ],\n    \&quot;2025\&quot;: [\n      \&quot;2025-01-02\&quot;,\n      \&quot;...\&quot;\n    ]\n  }\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;email\&quot;: \&quot;user1234@mailnesia.com\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -32,7 +32,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>a9df930e-a84f-4eb6-94d4-72191e30d909</webElementGuid>
+      <webElementGuid>c44b91b7-47b4-405a-81bf-5ab5318b88b2</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${setting-process}${endpoint}</restUrl>
+   <restUrl>${list-account-member}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -57,11 +57,11 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.setting_group_member</defaultValue>
+      <defaultValue>GlobalVariable.list_account_member</defaultValue>
       <description></description>
       <id>febfa1bd-a0ab-4582-af2e-499fbf137de0</id>
       <masked>false</masked>
-      <name>setting-process</name>
+      <name>list-account-member</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
@@ -71,7 +71,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'group-members'</defaultValue>
+      <defaultValue>'account-members'</defaultValue>
       <description></description>
       <id>e3f70a07-6466-42ff-9733-3599d2e4bbdf</id>
       <masked>false</masked>
