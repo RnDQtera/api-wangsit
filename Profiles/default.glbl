@@ -29,4 +29,14 @@
       <initValue>'https://dev-api-settings-process.wangs.id/'</initValue>
       <name>setting_process</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-settings-member-admin.wangs.id/'</initValue>
+      <name>setting_member_admin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-settings-group-member.wangs.id/'</initValue>
+      <name>setting_group_member</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
