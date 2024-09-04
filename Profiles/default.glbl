@@ -44,4 +44,39 @@
       <initValue>'https://dev-api-team-member-account.wangs.id/'</initValue>
       <name>list_account_member</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-team-member-member.wangs.id/'</initValue>
+      <name>team_member_member</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-auth.wangs.id/'</initValue>
+      <name>auth_wangsit</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-project.wangs.id/'</initValue>
+      <name>project</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-project-approval.wangs.id/'</initValue>
+      <name>proyek_approval</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-project-module.wangs.id/'</initValue>
+      <name>proyek_modul</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-project-api-server.wangs.id/'</initValue>
+      <name>project_api_servers</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-project-team.wangs.id/'</initValue>
+      <name>project_tim</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
