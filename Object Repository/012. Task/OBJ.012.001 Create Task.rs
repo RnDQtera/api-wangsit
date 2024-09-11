@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.011.001 Put Project SonarQube Account</name>
+   <name>OBJ.012.001 Create Task</name>
    <tag></tag>
-   <elementGuidId>33f4910b-3419-46d5-af99-952b2bd37e62</elementGuidId>
+   <elementGuidId>a5e9c1e5-4035-4cf6-beb9-2bff83a2bf12</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -16,38 +16,26 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>false</autoUpdateContent>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;division\&quot;: \&quot;Frontend\&quot;,\n    \&quot;username\&quot;: \&quot;username\&quot;,\n    \&quot;password\&quot;: \&quot;passwordExample\&quot;\n  }&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>982f5b01-e4ac-4773-a53d-6812c4f2db30</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>00809c0f-06f5-4306-b112-ef46f4ff34d6</webElementGuid>
+      <webElementGuid>a40539fd-8732-44ec-bff9-167415fd2f38</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.5.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${project}${endpoint}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${task}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -57,25 +45,25 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.project_api_servers</defaultValue>
+      <defaultValue>'api/tasks'</defaultValue>
       <description></description>
-      <id>4abeb5d5-b73d-4f5a-89ec-d8df99f1e140</id>
+      <id>d5ade8b8-2cc1-45c2-91be-0ae69e33a665</id>
       <masked>false</masked>
-      <name>project</name>
+      <name>endpoint</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>5ac007c3-5e55-40c4-81a8-8899c02881c6</id>
+      <id>683c41e5-a17b-486d-9035-20c45e25fd8c</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'project/project-detail/66d52629da1f6ebdaa8e6243/api-server/sonarqube-accounts'</defaultValue>
+      <defaultValue>GlobalVariable.Member_Team</defaultValue>
       <description></description>
-      <id>31ba1f9a-376c-46e8-8d03-a9fdb25a7581</id>
+      <id>f72413c0-31ed-4064-9c35-812f6dd8d222</id>
       <masked>false</masked>
-      <name>endpoint</name>
+      <name>task</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

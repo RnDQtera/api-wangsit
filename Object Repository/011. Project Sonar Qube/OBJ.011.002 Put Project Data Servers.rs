@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.011.001 Put Project SonarQube Account</name>
+   <name>OBJ.011.002 Put Project Data Servers</name>
    <tag></tag>
-   <elementGuidId>33f4910b-3419-46d5-af99-952b2bd37e62</elementGuidId>
+   <elementGuidId>f61095f5-ce4c-4958-baa1-0d9bb3758c75</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;division\&quot;: \&quot;Frontend\&quot;,\n    \&quot;username\&quot;: \&quot;username\&quot;,\n    \&quot;password\&quot;: \&quot;passwordExample\&quot;\n  }&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;domainNameServer\&quot;: \&quot;asdf.id\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -71,7 +71,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'project/project-detail/66d52629da1f6ebdaa8e6243/api-server/sonarqube-accounts'</defaultValue>
+      <defaultValue>'project/project-detail/66d52629da1f6ebdaa8e6243/api-server/data-server'</defaultValue>
       <description></description>
       <id>31ba1f9a-376c-46e8-8d03-a9fdb25a7581</id>
       <masked>false</masked>

@@ -17,15 +17,34 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('001 SLA QC/OBJ.001.001.Get List SLA QC', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
+WS.sendRequest(findTestObject('001 SLA QC/OBJ.001.001.Get List SLA QC', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
             , ('endpoint') : 'settings/sla/qc']))
 
-WebUI.click(findTestObject('001 SLA QC/OBJ.001.002.Get SLA Ticket', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
+WS.sendRequest(findTestObject('001 SLA QC/OBJ.001.002.Get SLA Ticket', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
             , ('endpoint') : 'settings/sla/ticket']))
 
-WebUI.click(findTestObject('001 SLA QC/OBJ.001.003.Put SLA QC', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
+WS.sendRequest(findTestObject('001 SLA QC/OBJ.001.003.Put SLA QC', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
             , ('endpoint') : 'settings/sla/qc']))
 
-WebUI.click(findTestObject('001 SLA QC/OBJ.001.004.Put SLA Ticket', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
+WS.sendRequest(findTestObject('001 SLA QC/OBJ.001.004.Put SLA Ticket', [('sla') : GlobalVariable.SLA, ('token') : GlobalVariable.token
             , ('endpoint') : 'settings/sla/ticket']))
+
+'Team And Member\r\n'
+WS.delay(2)
+
+'Team And Member\r\n'
+WS.sendRequest(findTestObject('002 Team Member Team/OBJ.002.001.Get List Teams', [('teams') : GlobalVariable.Member_Team
+            , ('token') : GlobalVariable.token, ('endpoint') : '/api/teams']))
+
+'Team And Member\r\n'
+WS.sendRequest(findTestObject('002 Team Member Team/OBJ.002.002.Get List Teams Options', [('teams') : GlobalVariable.Member_Team
+            , ('token') : GlobalVariable.token, ('endpoint') : 'api/teams/options']))
+
+'Team And Member\r\n'
+WS.sendRequest(findTestObject('002 Team Member Team/OBJ.002.003.Get List Teams Detail', [('teams') : GlobalVariable.Member_Team
+            , ('token') : GlobalVariable.token, ('endpoint') : '/api/teams/', ('id') : '66beef9f787cdd8139a71515']))
+
+'Team And Member\r\n'
+WS.sendRequest(findTestObject('002 Team Member Team/OBJ.002.004.Put Update Account', [('teams') : GlobalVariable.Member_Team
+            , ('token') : GlobalVariable.token, ('endpoint') : 'api/teams/', ('id') : '66beef9f787cdd8139a71515/update-account']))
 
