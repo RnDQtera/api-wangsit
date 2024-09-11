@@ -79,4 +79,14 @@
       <initValue>'https://dev-api-project-team.wangs.id/'</initValue>
       <name>project_tim</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-task.wangs.id/'</initValue>
+      <name>task</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-project-sub-module.wangs.id/'</initValue>
+      <name>submodul</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

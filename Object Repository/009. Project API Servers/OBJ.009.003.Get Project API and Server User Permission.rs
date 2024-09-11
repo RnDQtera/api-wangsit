@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.012.001 Create Task</name>
+   <name>OBJ.009.003.Get Project API and Server User Permission</name>
    <tag></tag>
-   <elementGuidId>a5e9c1e5-4035-4cf6-beb9-2bff83a2bf12</elementGuidId>
+   <elementGuidId>cd60bc25-fd87-48ee-9f77-a1c356050b9a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -16,66 +16,54 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>false</autoUpdateContent>
-   <connectionTimeout>0</connectionTimeout>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;project\&quot;: \&quot;string\&quot;,\n  \&quot;process\&quot;: \&quot;string\&quot;,\n  \&quot;module\&quot;: \&quot;string\&quot;,\n  \&quot;subModule\&quot;: \&quot;string\&quot;,\n  \&quot;name\&quot;: \&quot;string\&quot;,\n  \&quot;assignedTo\&quot;: \&quot;string[]\&quot;,\n  \&quot;team\&quot;: \&quot;string\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>bf491166-70f8-4c1c-97b4-c6a910eb1276</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>acd461ce-d790-42d1-8b6f-f01baced4a89</webElementGuid>
+      <webElementGuid>3400c005-b95f-46cc-9831-c0e3fd8b64cf</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>9.5.0</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <katalonVersion>9.6.0</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${task}${endpoint}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${project}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'api/tasks'</defaultValue>
+      <defaultValue>'project/project-detail/66d52629da1f6ebdaa8e6243/api-server/permissions'</defaultValue>
       <description></description>
-      <id>d5ade8b8-2cc1-45c2-91be-0ae69e33a665</id>
+      <id>385d1074-7124-4f0f-9084-79404b85b3b9</id>
       <masked>false</masked>
       <name>endpoint</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>683c41e5-a17b-486d-9035-20c45e25fd8c</id>
+      <id>8acb2d13-b49a-4811-ad92-31a81f0a32b1</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.task</defaultValue>
+      <defaultValue>GlobalVariable.project_api_servers</defaultValue>
       <description></description>
-      <id>f72413c0-31ed-4064-9c35-812f6dd8d222</id>
+      <id>ee2ce8a9-511a-4a62-81a4-b8de0d9157e6</id>
       <masked>false</masked>
-      <name>task</name>
+      <name>project</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -89,7 +77,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

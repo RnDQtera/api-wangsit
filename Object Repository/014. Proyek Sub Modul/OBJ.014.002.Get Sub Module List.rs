@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.012.001 Create Task</name>
+   <name>OBJ.014.002.Get Sub Module List</name>
    <tag></tag>
-   <elementGuidId>a5e9c1e5-4035-4cf6-beb9-2bff83a2bf12</elementGuidId>
+   <elementGuidId>ae6bffec-4d87-46ca-9a52-939ebed7009b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -16,23 +16,19 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>false</autoUpdateContent>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;project\&quot;: \&quot;string\&quot;,\n  \&quot;process\&quot;: \&quot;string\&quot;,\n  \&quot;module\&quot;: \&quot;string\&quot;,\n  \&quot;subModule\&quot;: \&quot;string\&quot;,\n  \&quot;name\&quot;: \&quot;string\&quot;,\n  \&quot;assignedTo\&quot;: \&quot;string[]\&quot;,\n  \&quot;team\&quot;: \&quot;string\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Accept</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>bf491166-70f8-4c1c-97b4-c6a910eb1276</webElementGuid>
+      <webElementGuid>1344d854-7346-46ec-bb01-e378baf4e079</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -40,14 +36,14 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>acd461ce-d790-42d1-8b6f-f01baced4a89</webElementGuid>
+      <webElementGuid>4a32c4d3-d33d-4e2d-a7f4-559ee7593c57</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>9.5.0</katalonVersion>
+   <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${task}${endpoint}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${submodul}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -57,25 +53,25 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'api/tasks'</defaultValue>
+      <defaultValue>GlobalVariable.submodul</defaultValue>
       <description></description>
-      <id>d5ade8b8-2cc1-45c2-91be-0ae69e33a665</id>
+      <id>da0a0ac1-61e4-4757-b81b-5b484d2a3e7f</id>
       <masked>false</masked>
-      <name>endpoint</name>
+      <name>submodul</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>683c41e5-a17b-486d-9035-20c45e25fd8c</id>
+      <id>d621d0fe-af3b-4241-9646-63af1b246164</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.task</defaultValue>
+      <defaultValue>'66d52629da1f6ebdaa8e6243/project-detail/sub-module'</defaultValue>
       <description></description>
-      <id>f72413c0-31ed-4064-9c35-812f6dd8d222</id>
+      <id>9312004b-2f7e-4228-84cd-719d892ce426</id>
       <masked>false</masked>
-      <name>task</name>
+      <name>endpoint</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -89,7 +85,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

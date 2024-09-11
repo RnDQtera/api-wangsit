@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.012.001 Create Task</name>
+   <name>OBJ.002.005.Assign Member to Team</name>
    <tag></tag>
-   <elementGuidId>a5e9c1e5-4035-4cf6-beb9-2bff83a2bf12</elementGuidId>
+   <elementGuidId>857e3753-9431-4a34-8885-a92abea2ef35</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;project\&quot;: \&quot;string\&quot;,\n  \&quot;process\&quot;: \&quot;string\&quot;,\n  \&quot;module\&quot;: \&quot;string\&quot;,\n  \&quot;subModule\&quot;: \&quot;string\&quot;,\n  \&quot;name\&quot;: \&quot;string\&quot;,\n  \&quot;assignedTo\&quot;: \&quot;string[]\&quot;,\n  \&quot;team\&quot;: \&quot;string\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;team\&quot;: \&quot;MOB\&quot;,\n  \&quot;user\&quot;: [\&quot;66c833f028754c4f75532f00\&quot;]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -32,7 +32,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>bf491166-70f8-4c1c-97b4-c6a910eb1276</webElementGuid>
+      <webElementGuid>9ef8da4f-be1d-4ebe-b97c-b0b33333b00b</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -40,14 +40,14 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>acd461ce-d790-42d1-8b6f-f01baced4a89</webElementGuid>
+      <webElementGuid>0d86cb10-06ad-43b6-be46-b52373d0f0eb</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>9.5.0</katalonVersion>
+   <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${task}${endpoint}</restUrl>
+   <restUrl>${teams}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -57,25 +57,25 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'api/tasks'</defaultValue>
+      <defaultValue>GlobalVariable.Member_Team</defaultValue>
       <description></description>
-      <id>d5ade8b8-2cc1-45c2-91be-0ae69e33a665</id>
+      <id>b2a804a6-386d-4a15-bb2c-77bfe9856002</id>
       <masked>false</masked>
-      <name>endpoint</name>
+      <name>teams</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>683c41e5-a17b-486d-9035-20c45e25fd8c</id>
+      <id>a4b9b6bb-8755-4864-93f9-4c6891b11e78</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.task</defaultValue>
+      <defaultValue>'/api/teams/assign-member'</defaultValue>
       <description></description>
-      <id>f72413c0-31ed-4064-9c35-812f6dd8d222</id>
+      <id>34322e24-5b0c-40fa-874b-a568ab18acce</id>
       <masked>false</masked>
-      <name>task</name>
+      <name>endpoint</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -89,7 +89,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.012.001 Create Task</name>
+   <name>OBJ.013.001. Put Deactivate Member</name>
    <tag></tag>
-   <elementGuidId>a5e9c1e5-4035-4cf6-beb9-2bff83a2bf12</elementGuidId>
+   <elementGuidId>553ade7e-fa2c-4176-b21d-e1c4e7bb8288</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -16,12 +16,12 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>false</autoUpdateContent>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;project\&quot;: \&quot;string\&quot;,\n  \&quot;process\&quot;: \&quot;string\&quot;,\n  \&quot;module\&quot;: \&quot;string\&quot;,\n  \&quot;subModule\&quot;: \&quot;string\&quot;,\n  \&quot;name\&quot;: \&quot;string\&quot;,\n  \&quot;assignedTo\&quot;: \&quot;string[]\&quot;,\n  \&quot;team\&quot;: \&quot;string\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -32,7 +32,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>bf491166-70f8-4c1c-97b4-c6a910eb1276</webElementGuid>
+      <webElementGuid>5ccf1085-2c7f-49da-9ccc-9b2bec3c17f2</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -40,14 +40,14 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>acd461ce-d790-42d1-8b6f-f01baced4a89</webElementGuid>
+      <webElementGuid>f32b42d4-d7f7-44f8-9015-31bf290d68c5</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>9.5.0</katalonVersion>
+   <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${task}${endpoint}</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${member}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -57,25 +57,25 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'api/tasks'</defaultValue>
+      <defaultValue>'api/members/66cd5116c86e8e2de6b06bb3/deactivate'</defaultValue>
       <description></description>
-      <id>d5ade8b8-2cc1-45c2-91be-0ae69e33a665</id>
+      <id>3445db8a-0167-4207-a176-4bb04239a5f2</id>
       <masked>false</masked>
       <name>endpoint</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>683c41e5-a17b-486d-9035-20c45e25fd8c</id>
+      <id>c9b6ca46-8825-4f4f-95b1-3863a25ca48e</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.task</defaultValue>
+      <defaultValue>GlobalVariable.team_member_member</defaultValue>
       <description></description>
-      <id>f72413c0-31ed-4064-9c35-812f6dd8d222</id>
+      <id>30e73513-fd29-4f33-bb20-60e7de405712</id>
       <masked>false</masked>
-      <name>task</name>
+      <name>member</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -89,7 +89,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
