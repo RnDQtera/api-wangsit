@@ -17,13 +17,128 @@
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
    <autoUpdateContent>false</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
   &quot;contentType&quot;: &quot;multipart/form-data&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;,
-  &quot;parameters&quot;: []
+  &quot;parameters&quot;: [
+    {
+      &quot;name&quot;: &quot;fullName&quot;,
+      &quot;value&quot;: &quot;Cloud Strife&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;nickName&quot;,
+      &quot;value&quot;: &quot;Cloud&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;employeeType&quot;,
+      &quot;value&quot;: &quot;Karyawan&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;finishedDate&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;division&quot;,
+      &quot;value&quot;: &quot;RND&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;position&quot;,
+      &quot;value&quot;: &quot;Back End Developer&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;team&quot;,
+      &quot;value&quot;: &quot;Backend&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;email&quot;,
+      &quot;value&quot;: &quot;daffanih@email.com&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;phoneNumber&quot;,
+      &quot;value&quot;: &quot;62 12345678&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;groupMember&quot;,
+      &quot;value&quot;: &quot;66cd727a384afbd8015bfe17&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;initial&quot;,
+      &quot;value&quot;: &quot;CS&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;adminRoles&quot;,
+      &quot;value&quot;: &quot;66cd8996fbb80904527a14a5&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;needLeaderReview&quot;,
+      &quot;value&quot;: &quot;true&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;needTestingAccount&quot;,
+      &quot;value&quot;: &quot;true&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;profilePicture&quot;,
+      &quot;value&quot;: &quot;/Users/daffattrmdzi/Downloads/LOGO PPSI 2.png&quot;,
+      &quot;type&quot;: &quot;File&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;figmaPassword&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;githubPassword&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;isActive&quot;,
+      &quot;value&quot;: &quot;true&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;isImageChange&quot;,
+      &quot;value&quot;: &quot;true&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    }
+  ]
 }</httpBodyContent>
    <httpBodyType>form-data</httpBodyType>
    <httpHeaderProperties>
@@ -43,7 +158,7 @@
       <webElementGuid>10d242ac-a119-4bd5-aa8d-eda4c2df483d</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>PUT</restRequestMethod>
@@ -54,10 +169,10 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'/api/members/id'</defaultValue>
+      <defaultValue>'/api/members/66c833f028754c4f75532f00'</defaultValue>
       <description></description>
       <id>ab50d816-7dd5-4782-ab29-7c3d81e85de4</id>
       <masked>false</masked>
