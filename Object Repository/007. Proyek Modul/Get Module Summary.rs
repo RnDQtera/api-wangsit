@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Deaktifasi Status Proses (Project Details)</name>
+   <name>Get Module Summary</name>
    <tag></tag>
-   <elementGuidId>eee90933-a27e-4f2a-af14-7c3e8684a76f</elementGuidId>
+   <elementGuidId>455ded14-3759-4aa9-864c-42257fc5e145</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -16,46 +16,26 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>false</autoUpdateContent>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;active\&quot; : \&quot;false\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>48d3c76f-f742-44fe-a864-7fe5411479da</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>bf8db9a2-74cb-4569-9c2e-66c6b0046e25</webElementGuid>
+      <webElementGuid>ac1b0117-1c8b-4e36-bf45-2d1babf7b178</webElementGuid>
    </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Accept</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>9499f9e7-5133-4f30-8f9f-49db7fc6724e</webElementGuid>
-   </httpHeaderProperties>
-   <katalonVersion>9.6.0</katalonVersion>
+   <katalonVersion>9.5.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PATCH</restRequestMethod>
-   <restUrl>${proyek_proses}${endpoint}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${proyek_modul}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -65,25 +45,25 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'/project-details/set-inactive/66e901c265b533fbe0c72c20'</defaultValue>
+      <defaultValue>GlobalVariable.proyek_modul</defaultValue>
       <description></description>
-      <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
+      <id>4abeb5d5-b73d-4f5a-89ec-d8df99f1e140</id>
       <masked>false</masked>
-      <name>endpoint</name>
+      <name>proyek_modul</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>d8e48ae2-64e2-49a1-a626-809c2b59c24a</id>
+      <id>5ac007c3-5e55-40c4-81a8-8899c02881c6</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.proyek_proses</defaultValue>
+      <defaultValue>'66e901c165b533fbe0c72c03/project-detail/module/66e901c265b533fbe0c72c5a/summary'</defaultValue>
       <description></description>
-      <id>052f2831-caf8-401e-a9c0-01d9481218dc</id>
+      <id>31ba1f9a-376c-46e8-8d03-a9fdb25a7581</id>
       <masked>false</masked>
-      <name>proyek_proses</name>
+      <name>endpoint</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

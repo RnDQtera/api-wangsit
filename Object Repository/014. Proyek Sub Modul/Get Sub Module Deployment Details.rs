@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Deaktifasi Status Proses (Project Details)</name>
+   <name>Get Sub Module Deployment Details</name>
    <tag></tag>
-   <elementGuidId>eee90933-a27e-4f2a-af14-7c3e8684a76f</elementGuidId>
+   <elementGuidId>d6ef7df0-625d-4180-a9f0-20da51e6c2c9</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -20,20 +20,8 @@
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;active\&quot; : \&quot;false\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>48d3c76f-f742-44fe-a864-7fe5411479da</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -54,8 +42,8 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PATCH</restRequestMethod>
-   <restUrl>${proyek_proses}${endpoint}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${submodul}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -65,7 +53,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'/project-details/set-inactive/66e901c265b533fbe0c72c20'</defaultValue>
+      <defaultValue>'66e901c165b533fbe0c72c03/project-detail/sub-module/66f12a9720a1e44d9a92c03d/deployment'</defaultValue>
       <description></description>
       <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>
@@ -79,11 +67,11 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.proyek_proses</defaultValue>
+      <defaultValue>GlobalVariable.submodul</defaultValue>
       <description></description>
       <id>052f2831-caf8-401e-a9c0-01d9481218dc</id>
       <masked>false</masked>
-      <name>proyek_proses</name>
+      <name>submodul</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
