@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Post Create Proyek</name>
+   <name>Put Edit Proyek</name>
    <tag></tag>
-   <elementGuidId>f009d3e4-471e-4478-bbb5-0d2dae6d9473</elementGuidId>
+   <elementGuidId>0f6559c5-4cdf-4414-a9b5-d2be7299e44f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;type\&quot;: \&quot;Proyek Pengembangan\&quot;,\n  \&quot;developedProjectId\&quot;:\&quot;66f284cec21cc4915c008362\&quot;,\n  \&quot;name\&quot;: \&quot;Barcelona\&quot;,\n  \&quot;initialName\&quot;: \&quot;BA\&quot;,\n  \&quot;method\&quot;:\&quot;Sprint\&quot;,\n  \&quot;priority\&quot;:2,\n  \&quot;templateProsesId\&quot;:\&quot;66fe2ea7d7c316a8f61846f3\&quot;,\n  \&quot;managersId\&quot;:[\&quot;Manager1\&quot;],\n  \&quot;startAt\&quot;:\&quot;2024-10-09 09:22:22\&quot;\n  }&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;Project QC\&quot;,\n  \&quot;initialName\&quot;: \&quot;PQC\&quot;,\n  \&quot;priority\&quot;: 1,\n  \&quot;managersId\&quot;: [\n    \&quot;66e901c165b533fbe0c72d72\&quot;\n  ],\n  \&quot;startAt\&quot;: \&quot;2024-10-09 01:29:50\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -32,7 +32,15 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>f76a4749-908d-40ee-8e3a-92bd2a2d70ad</webElementGuid>
+      <webElementGuid>b4d3ba17-4ccc-4636-87e7-5c56ef3c40a4</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer ${token}</value>
+      <webElementGuid>bf8db9a2-74cb-4569-9c2e-66c6b0046e25</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -42,19 +50,11 @@
       <value>application/json</value>
       <webElementGuid>9499f9e7-5133-4f30-8f9f-49db7fc6724e</webElementGuid>
    </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Authorization</name>
-      <type>Main</type>
-      <value>Bearer ${token}</value>
-      <webElementGuid>b0e58668-1fe9-445e-996c-ef50e6cddea5</webElementGuid>
-   </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
+   <restRequestMethod>PUT</restRequestMethod>
    <restUrl>${project}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -65,7 +65,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'/project'</defaultValue>
+      <defaultValue>'/project/update/66f4ce23352efef8e6cec9f1'</defaultValue>
       <description></description>
       <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>

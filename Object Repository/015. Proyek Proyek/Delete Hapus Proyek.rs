@@ -53,7 +53,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'/project/delete/66f27dc9c21cc4915c007cc2'</defaultValue>
+      <defaultValue>'/project/delete/66f285c5c21cc4915c0084e6'</defaultValue>
       <description></description>
       <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>

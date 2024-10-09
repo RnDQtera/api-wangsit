@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Post Create Proyek</name>
+   <name>Get Rank Point</name>
    <tag></tag>
-   <elementGuidId>f009d3e4-471e-4478-bbb5-0d2dae6d9473</elementGuidId>
+   <elementGuidId>b982ad27-1039-41cf-96f4-d800361bf083</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -20,20 +20,8 @@
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;type\&quot;: \&quot;Proyek Pengembangan\&quot;,\n  \&quot;developedProjectId\&quot;:\&quot;66f284cec21cc4915c008362\&quot;,\n  \&quot;name\&quot;: \&quot;Barcelona\&quot;,\n  \&quot;initialName\&quot;: \&quot;BA\&quot;,\n  \&quot;method\&quot;:\&quot;Sprint\&quot;,\n  \&quot;priority\&quot;:2,\n  \&quot;templateProsesId\&quot;:\&quot;66fe2ea7d7c316a8f61846f3\&quot;,\n  \&quot;managersId\&quot;:[\&quot;Manager1\&quot;],\n  \&quot;startAt\&quot;:\&quot;2024-10-09 09:22:22\&quot;\n  }&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>f76a4749-908d-40ee-8e3a-92bd2a2d70ad</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -48,14 +36,14 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>b0e58668-1fe9-445e-996c-ef50e6cddea5</webElementGuid>
+      <webElementGuid>9c16580b-2f3c-4e84-868a-861d6a8a4977</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${project}${endpoint}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${setting_point}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -65,7 +53,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'/project'</defaultValue>
+      <defaultValue>'/point/rank-point'</defaultValue>
       <description></description>
       <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>
@@ -79,11 +67,11 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.project</defaultValue>
+      <defaultValue>GlobalVariable.setting_point</defaultValue>
       <description></description>
       <id>052f2831-caf8-401e-a9c0-01d9481218dc</id>
       <masked>false</masked>
-      <name>project</name>
+      <name>setting_point</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

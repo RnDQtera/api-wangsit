@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Post Create Proyek</name>
+   <name>Get Search Proyek Selesai</name>
    <tag></tag>
-   <elementGuidId>f009d3e4-471e-4478-bbb5-0d2dae6d9473</elementGuidId>
+   <elementGuidId>0e4e5172-0662-488f-ac60-cd414ac3b3c5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -20,20 +20,8 @@
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;type\&quot;: \&quot;Proyek Pengembangan\&quot;,\n  \&quot;developedProjectId\&quot;:\&quot;66f284cec21cc4915c008362\&quot;,\n  \&quot;name\&quot;: \&quot;Barcelona\&quot;,\n  \&quot;initialName\&quot;: \&quot;BA\&quot;,\n  \&quot;method\&quot;:\&quot;Sprint\&quot;,\n  \&quot;priority\&quot;:2,\n  \&quot;templateProsesId\&quot;:\&quot;66fe2ea7d7c316a8f61846f3\&quot;,\n  \&quot;managersId\&quot;:[\&quot;Manager1\&quot;],\n  \&quot;startAt\&quot;:\&quot;2024-10-09 09:22:22\&quot;\n  }&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>f76a4749-908d-40ee-8e3a-92bd2a2d70ad</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -48,13 +36,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>b0e58668-1fe9-445e-996c-ef50e6cddea5</webElementGuid>
+      <webElementGuid>692a510a-d313-4b84-8a19-e3b4c8864ba7</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
+   <restRequestMethod>GET</restRequestMethod>
    <restUrl>${project}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -65,7 +53,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'/project'</defaultValue>
+      <defaultValue>'/project/finished-search'</defaultValue>
       <description></description>
       <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>
