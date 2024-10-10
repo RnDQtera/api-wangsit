@@ -104,4 +104,9 @@
       <initValue>'https://dev-api-project-qc.wangs.id/'</initValue>
       <name>proyek_qc</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-ticket.wangs.id/'</initValue>
+      <name>ticket</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
