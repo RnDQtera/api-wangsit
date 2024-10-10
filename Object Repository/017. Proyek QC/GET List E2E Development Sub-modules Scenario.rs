@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Post Create Proyek</name>
+   <name>GET List E2E Development Sub-modules Scenario</name>
    <tag></tag>
-   <elementGuidId>f009d3e4-471e-4478-bbb5-0d2dae6d9473</elementGuidId>
+   <elementGuidId>e9d1e81c-6a67-45ca-b658-5ae8bfc21f43</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -20,19 +20,15 @@
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;type\&quot;: \&quot;Proyek Baru\&quot;,\n  \&quot;name\&quot;: \&quot;Test QC\&quot;,\n  \&quot;initialName\&quot;: \&quot;TSQC\&quot;,\n  \&quot;method\&quot;: \&quot;Sprint\&quot;,\n  \&quot;templateProsesId\&quot;: \&quot;66cbf1eb83bed62692d7bf7b\&quot;,\n  \&quot;managersId\&quot;: [\n    \&quot;66d1771c1ebe5344bc2b9dab\&quot;\n  ],\n  \&quot;startAt\&quot;: \&quot;2025-09-24T10:17:10.276Z\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>f76a4749-908d-40ee-8e3a-92bd2a2d70ad</webElementGuid>
+      <value>Bearer ${token}</value>
+      <webElementGuid>bf8db9a2-74cb-4569-9c2e-66c6b0046e25</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -42,20 +38,12 @@
       <value>application/json</value>
       <webElementGuid>9499f9e7-5133-4f30-8f9f-49db7fc6724e</webElementGuid>
    </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Authorization</name>
-      <type>Main</type>
-      <value>Bearer ${token}</value>
-      <webElementGuid>b0e58668-1fe9-445e-996c-ef50e6cddea5</webElementGuid>
-   </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${project}${endpoint}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${proyek_qc}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -65,7 +53,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'/project'</defaultValue>
+      <defaultValue>'/quality-control/66f4ce23352efef8e6cec9f1/development/scenario'</defaultValue>
       <description></description>
       <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>
@@ -79,11 +67,11 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.project</defaultValue>
+      <defaultValue>GlobalVariable.proyek_qc</defaultValue>
       <description></description>
       <id>052f2831-caf8-401e-a9c0-01d9481218dc</id>
       <masked>false</masked>
-      <name>project</name>
+      <name>proyek_qc</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Post Create Proyek</name>
+   <name>OBJ.009.03 Put Edit Swagger Account</name>
    <tag></tag>
-   <elementGuidId>f009d3e4-471e-4478-bbb5-0d2dae6d9473</elementGuidId>
+   <elementGuidId>fce4015e-b9b2-4d00-b7f1-ae4e2547c817</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;type\&quot;: \&quot;Proyek Baru\&quot;,\n  \&quot;name\&quot;: \&quot;Test QC\&quot;,\n  \&quot;initialName\&quot;: \&quot;TSQC\&quot;,\n  \&quot;method\&quot;: \&quot;Sprint\&quot;,\n  \&quot;templateProsesId\&quot;: \&quot;66cbf1eb83bed62692d7bf7b\&quot;,\n  \&quot;managersId\&quot;: [\n    \&quot;66d1771c1ebe5344bc2b9dab\&quot;\n  ],\n  \&quot;startAt\&quot;: \&quot;2025-09-24T10:17:10.276Z\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;username\&quot;: \&quot;user90\&quot;,\n  \&quot;password\&quot;: \&quot;pass90\&quot;,\n  \&quot;jwt\&quot;: \&quot;sometoken\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -32,15 +32,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>f76a4749-908d-40ee-8e3a-92bd2a2d70ad</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Accept</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>9499f9e7-5133-4f30-8f9f-49db7fc6724e</webElementGuid>
+      <webElementGuid>1d5dc200-f518-490e-8910-e3f25b72d122</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -48,14 +40,22 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>b0e58668-1fe9-445e-996c-ef50e6cddea5</webElementGuid>
+      <webElementGuid>c4dd34e3-3313-4be8-b73a-cb4ecdf4ef48</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>9.6.0</katalonVersion>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Accept</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>b4a97916-8cf7-4b0c-bd7c-008c72854445</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>9.5.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${project}${endpoint}</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${project_apiserver}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -65,25 +65,25 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'/project'</defaultValue>
+      <defaultValue>GlobalVariable.project_api_servers</defaultValue>
       <description></description>
-      <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
+      <id>4abeb5d5-b73d-4f5a-89ec-d8df99f1e140</id>
       <masked>false</masked>
-      <name>endpoint</name>
+      <name>project_apiserver</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>d8e48ae2-64e2-49a1-a626-809c2b59c24a</id>
+      <id>5ac007c3-5e55-40c4-81a8-8899c02881c6</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.project</defaultValue>
+      <defaultValue>'project/project-detail/66f284cec21cc4915c008367/api-server/swagger-account'</defaultValue>
       <description></description>
-      <id>052f2831-caf8-401e-a9c0-01d9481218dc</id>
+      <id>31ba1f9a-376c-46e8-8d03-a9fdb25a7581</id>
       <masked>false</masked>
-      <name>project</name>
+      <name>endpoint</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

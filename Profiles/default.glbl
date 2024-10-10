@@ -99,4 +99,9 @@
       <initValue>'https://dev-api-settings-point.wangs.id/'</initValue>
       <name>setting_point</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-project-qc.wangs.id/'</initValue>
+      <name>proyek_qc</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
