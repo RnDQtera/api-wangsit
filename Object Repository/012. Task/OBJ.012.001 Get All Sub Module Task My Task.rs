@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.018.007 Delete Hapus Reaction Comment</name>
+   <name>OBJ.012.001 Get All Sub Module Task My Task</name>
    <tag></tag>
-   <elementGuidId>43137b28-10a2-4e48-907a-ded87a522319</elementGuidId>
+   <elementGuidId>c57198af-0772-49cd-a91a-6a3052e5e9d4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -28,14 +28,14 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>faff427f-9e23-4c38-8644-92fc2eae1328</webElementGuid>
+      <webElementGuid>53ee5b99-87e0-4123-936b-71ed1cba4e33</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.7.2</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${comment}${endpoint}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${task}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -45,23 +45,23 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.comment</defaultValue>
+      <defaultValue>GlobalVariable.task</defaultValue>
       <description></description>
-      <id>f92be024-0a72-41ef-8d93-ef658dd68ec1</id>
+      <id>8811d557-ab85-4538-83ca-bc0f9d5e0415</id>
       <masked>false</masked>
-      <name>comment</name>
+      <name>task</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>cb8759b7-ce52-45fb-b31a-23a72d0d0ae1</id>
+      <id>c45ac4d1-b2e9-473a-9d2a-e5eab1ecf9d5</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'comments/reactions/67075de7ca91bb4aa7ffe4c2'</defaultValue>
+      <defaultValue>'api/sub-modules/66e9399b526ab43e0426e37d/task/all/my-task'</defaultValue>
       <description></description>
-      <id>cd1850f6-9389-4e5f-91c2-81b45c86e7de</id>
+      <id>be2130cf-241c-47b7-9164-262d68b12d99</id>
       <masked>false</masked>
       <name>endpoint</name>
    </variables>
