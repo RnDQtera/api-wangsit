@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.003.004.009 Delete Account Member</name>
+   <name>OBJ.004.11 Get List All Testing Account on Project</name>
    <tag></tag>
-   <elementGuidId>f7f50284-401a-46e8-afad-0c9779cd836f</elementGuidId>
+   <elementGuidId>8b227b52-14c8-403b-863c-9d949258cdb5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -16,8 +16,8 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>false</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
@@ -31,18 +31,18 @@
       <webElementGuid>b02f5679-bc31-4b46-8d42-b78bb34e8ce5</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.5.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${list-account-member}${endpoint}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${list-account-member}${endpoint}?accountType=scenario</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.list_account_member</defaultValue>
@@ -59,7 +59,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'account-members/66ce8e7b49944851601fcd54'</defaultValue>
+      <defaultValue>'/account-testing/66f4ce23352efef8e6cec9f1/accounts'</defaultValue>
       <description></description>
       <id>e3f70a07-6466-42ff-9733-3599d2e4bbdf</id>
       <masked>false</masked>

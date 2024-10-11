@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.003.004.006 Update Account member wangsit,Figma and Github</name>
+   <name>OBJ.004.04 Post Account member</name>
    <tag></tag>
-   <elementGuidId>4c024c91-aa98-4fdf-8001-44f678fe60f5</elementGuidId>
+   <elementGuidId>3d0ca38f-9496-4b18-87fa-39ddc445b78d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;wangsitPassword\&quot;: \&quot;$2b$06$Wf/IKIii3W7XWSnEN1Yb/.2q/L8rSkyBVt/UK7zBkHYpClg6DmbVp\&quot;,\n  \&quot;figmaPassword\&quot;: \&quot;e$!g0wm^n.{\u003c}YRh#JEuZUGcb$x#7y:P\&quot;,\n  \&quot;githubPassword\&quot;: \&quot;\u003czL,*As{\u0026FULh1ay8uu|^,\u0026C{_G)2yxP\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;email\&quot;: \&quot;user1234@mailnesia.com\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -46,7 +46,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PUT</restRequestMethod>
+   <restRequestMethod>POST</restRequestMethod>
    <restUrl>${list-account-member}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -71,7 +71,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'account-members/66c82c9ac3a327f4c55f1fd5/change-password'</defaultValue>
+      <defaultValue>'account-members'</defaultValue>
       <description></description>
       <id>e3f70a07-6466-42ff-9733-3599d2e4bbdf</id>
       <masked>false</masked>

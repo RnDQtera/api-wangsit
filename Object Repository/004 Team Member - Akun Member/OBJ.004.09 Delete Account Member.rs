@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.003.004.005 Post Account Project</name>
+   <name>OBJ.004.09 Delete Account Member</name>
    <tag></tag>
-   <elementGuidId>c0a05e53-f8ab-4218-8b5e-dcb88cea4a27</elementGuidId>
+   <elementGuidId>f7f50284-401a-46e8-afad-0c9779cd836f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -20,20 +20,8 @@
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;projectId\&quot;: \&quot;65ea7d29f5cd331b5beed2b1\&quot;,\n  \&quot;email\&quot;: \&quot;user4321@mailnesia.com\&quot;,\n  \&quot;password\&quot;: \&quot;$2b$06$oMo69cXHm4BfRj5zFs5JAO5k06OZK0uqN6ssIpUkxfTBc.8TYwduC\&quot;,\n  \&quot;type\&quot;: \&quot;api\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>c44b91b7-47b4-405a-81bf-5ab5318b88b2</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -46,7 +34,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
+   <restRequestMethod>DELETE</restRequestMethod>
    <restUrl>${list-account-member}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -71,7 +59,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'account-projects'</defaultValue>
+      <defaultValue>'account-members/66ce8e7b49944851601fcd54'</defaultValue>
       <description></description>
       <id>e3f70a07-6466-42ff-9733-3599d2e4bbdf</id>
       <masked>false</masked>
