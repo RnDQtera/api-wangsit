@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.003.004.001Get List Account Member</name>
+   <name>OBJ.004.14 Delete Account Testing</name>
    <tag></tag>
-   <elementGuidId>82b8f866-85d3-4592-a487-acc235fc9391</elementGuidId>
+   <elementGuidId>be160c4c-47e7-40e5-a232-ed3aa9d8612e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -16,12 +16,16 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>true</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <autoUpdateContent>false</autoUpdateContent>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;description\&quot;: \&quot;update\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -30,11 +34,27 @@
       <value>Bearer ${token}</value>
       <webElementGuid>b02f5679-bc31-4b46-8d42-b78bb34e8ce5</webElementGuid>
    </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Accept</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>46e5e5c6-0e15-4dc9-ba16-8ab9353fb3a4</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>3afbb112-3561-4107-9e91-38d0f5fd4942</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>9.5.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>GET</restRequestMethod>
+   <restRequestMethod>DELETE</restRequestMethod>
    <restUrl>${list-account-member}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -42,7 +62,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.list_account_member</defaultValue>
@@ -59,7 +79,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'account-members'</defaultValue>
+      <defaultValue>'/account-testing/66f4ce23352efef8e6cec9f1/accounts/6707ad51826f399c8ded31f5'</defaultValue>
       <description></description>
       <id>e3f70a07-6466-42ff-9733-3599d2e4bbdf</id>
       <masked>false</masked>

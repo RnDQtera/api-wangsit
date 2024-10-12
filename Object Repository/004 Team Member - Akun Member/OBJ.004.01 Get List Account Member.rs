@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.003.004.002 Get Account Member Password Schedule</name>
+   <name>OBJ.004.01 Get List Account Member</name>
    <tag></tag>
-   <elementGuidId>95af97cc-1256-4429-b4a4-b6cfa46d0663</elementGuidId>
+   <elementGuidId>82b8f866-85d3-4592-a487-acc235fc9391</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -59,7 +59,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'account-members/password-schedule'</defaultValue>
+      <defaultValue>'account-members'</defaultValue>
       <description></description>
       <id>e3f70a07-6466-42ff-9733-3599d2e4bbdf</id>
       <masked>false</masked>

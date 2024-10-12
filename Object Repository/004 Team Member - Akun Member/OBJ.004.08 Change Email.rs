@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.003.004.008 Change Email</name>
+   <name>OBJ.004.08 Change Email</name>
    <tag></tag>
    <elementGuidId>810f2259-4b57-4ee7-b5e2-da6c28e0eb76</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>

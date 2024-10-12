@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.003.004.004 Post Account member</name>
+   <name>OBJ.004.05 Post Account Project</name>
    <tag></tag>
-   <elementGuidId>3d0ca38f-9496-4b18-87fa-39ddc445b78d</elementGuidId>
+   <elementGuidId>c0a05e53-f8ab-4218-8b5e-dcb88cea4a27</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;email\&quot;: \&quot;user1234@mailnesia.com\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;projectId\&quot;: \&quot;65ea7d29f5cd331b5beed2b1\&quot;,\n  \&quot;email\&quot;: \&quot;user4321@mailnesia.com\&quot;,\n  \&quot;password\&quot;: \&quot;$2b$06$oMo69cXHm4BfRj5zFs5JAO5k06OZK0uqN6ssIpUkxfTBc.8TYwduC\&quot;,\n  \&quot;type\&quot;: \&quot;api\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -71,7 +71,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'account-members'</defaultValue>
+      <defaultValue>'account-projects'</defaultValue>
       <description></description>
       <id>e3f70a07-6466-42ff-9733-3599d2e4bbdf</id>
       <masked>false</masked>

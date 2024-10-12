@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.003.004.007 Change Password Schedule</name>
+   <name>OBJ.004.03 Get Account member by id</name>
    <tag></tag>
-   <elementGuidId>e86945d8-6f87-4a4e-9ce0-e1c22f99d86d</elementGuidId>
+   <elementGuidId>18ac1c3d-e2f5-48e3-b84d-ba47d2f756f4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -16,24 +16,12 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>false</autoUpdateContent>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;value\&quot;: 1,\n  \&quot;unit\&quot;: \&quot;month\&quot;,\n  \&quot;type\&quot;: \&quot;api\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>c44b91b7-47b4-405a-81bf-5ab5318b88b2</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -46,7 +34,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PUT</restRequestMethod>
+   <restRequestMethod>GET</restRequestMethod>
    <restUrl>${list-account-member}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -71,7 +59,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'account-projects/66c82c9ac3a327f4c55f1fd5/password-schedule'</defaultValue>
+      <defaultValue>'account-members/66c830ddc3a327f4c55f2015'</defaultValue>
       <description></description>
       <id>e3f70a07-6466-42ff-9733-3599d2e4bbdf</id>
       <masked>false</masked>
