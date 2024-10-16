@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.020.004 Post Request Access Diagram</name>
+   <name>OBJ.020.015 Patch Akses Member Repo</name>
    <tag></tag>
-   <elementGuidId>2add6702-1006-4c96-babf-9f18bf56d001</elementGuidId>
+   <elementGuidId>6d7d989a-88a0-4a84-8131-1f1e4ca7d63e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;taskId\&quot;: \&quot;66ea4cf46cc06ccc8185af44\&quot;,\n  \&quot;requesterIds\&quot;: [\&quot;66d1771c1ebe5344bc2b9dab\&quot;]\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;taskId\&quot;: \&quot;66ea4cf46cc06ccc8185af44\&quot;,\n  \&quot;memberIds\&quot;: [\&quot;66d1771c1ebe5344bc2b9dab\&quot;]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -46,7 +46,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
+   <restRequestMethod>PATCH</restRequestMethod>
    <restUrl>${aksesresource}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -71,7 +71,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'request-access/diagrams'</defaultValue>
+      <defaultValue>'access-members/repo?repo=MOB'</defaultValue>
       <description></description>
       <id>ff1ad4d8-84cf-45fb-8e1c-d3d2b2ff588c</id>
       <masked>false</masked>
