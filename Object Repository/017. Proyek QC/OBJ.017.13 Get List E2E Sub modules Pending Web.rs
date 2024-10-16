@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GET List E2E Development Sub-modules Scenario</name>
+   <name>OBJ.017.13 Get List E2E Sub modules Pending Web</name>
    <tag></tag>
-   <elementGuidId>e9d1e81c-6a67-45ca-b658-5ae8bfc21f43</elementGuidId>
+   <elementGuidId>1b899258-7a15-4798-b0af-a19089ed16db</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -25,18 +25,18 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Authorization</name>
-      <type>Main</type>
-      <value>Bearer ${token}</value>
-      <webElementGuid>bf8db9a2-74cb-4569-9c2e-66c6b0046e25</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>Accept</name>
       <type>Main</type>
       <value>application/json</value>
       <webElementGuid>9499f9e7-5133-4f30-8f9f-49db7fc6724e</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer ${token}</value>
+      <webElementGuid>126ad325-19f9-457c-9cb0-262b0fc6c1eb</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
@@ -53,7 +53,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'/quality-control/66f4ce23352efef8e6cec9f1/development/scenario'</defaultValue>
+      <defaultValue>'/quality-control/670e212e16b06eea4e273433/development/web'</defaultValue>
       <description></description>
       <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>
