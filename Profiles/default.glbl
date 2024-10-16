@@ -109,4 +109,14 @@
       <initValue>'https://dev-api-ticket.wangs.id/'</initValue>
       <name>ticket</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-comments.wangs.id/'</initValue>
+      <name>comment</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-project-access-resource.wangs.id/'</initValue>
+      <name>proyek_akses_resource</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
