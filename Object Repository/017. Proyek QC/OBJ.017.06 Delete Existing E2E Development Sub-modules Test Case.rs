@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;ids\&quot;: [\n    \&quot;670f2b14075465045c0e4bc9\&quot;\n  ]\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;ids\&quot;: [\n    \&quot;6710d0d954c2c97a8b13834b\&quot;\n  ]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -65,7 +65,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'e2e-submodules/670e42d60889a59dd4bd8786/test-cases'</defaultValue>
+      <defaultValue>'e2e-submodules/670e2bd80889a59dd4bd77a2/test-cases'</defaultValue>
       <description></description>
       <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>

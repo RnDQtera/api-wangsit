@@ -65,7 +65,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'/e2e-submodules/670e42d60889a59dd4bd8786/test-cases'</defaultValue>
+      <defaultValue>'/e2e-submodules/670e2bd80889a59dd4bd77a2/test-cases'</defaultValue>
       <description></description>
       <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>
