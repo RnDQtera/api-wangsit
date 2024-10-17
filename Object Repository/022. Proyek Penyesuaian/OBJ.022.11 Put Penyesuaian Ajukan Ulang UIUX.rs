@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.003.003.001 Get Member Admin</name>
+   <name>OBJ.022.11 Put Penyesuaian Ajukan Ulang UIUX</name>
    <tag></tag>
-   <elementGuidId>4d536e62-6578-4f17-8c54-9a3a3984f296</elementGuidId>
+   <elementGuidId>15626b68-e572-44bd-ad88-4094e42521a7</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -16,8 +16,8 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>true</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <autoUpdateContent>false</autoUpdateContent>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
@@ -28,42 +28,42 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>b02f5679-bc31-4b46-8d42-b78bb34e8ce5</webElementGuid>
+      <webElementGuid>ba94504d-019f-43c2-a0ec-55945369ab7f</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>9.5.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <katalonVersion>9.6.0</katalonVersion>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${setting-process}${endpoint}</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${proyek_penyesuaian}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.setting_member_admin</defaultValue>
+      <defaultValue>GlobalVariable.proyek_penyesuaian</defaultValue>
       <description></description>
-      <id>febfa1bd-a0ab-4582-af2e-499fbf137de0</id>
+      <id>32cf3df5-2eb9-43eb-8533-c9905d983315</id>
       <masked>false</masked>
-      <name>setting-process</name>
+      <name>proyek_penyesuaian</name>
+   </variables>
+   <variables>
+      <defaultValue>'project-improvement/66e901c165b533fbe0c72c03/67107ab133863108ae667f35/re-apply'</defaultValue>
+      <description></description>
+      <id>97b29a75-5dcc-4f11-b5fb-ffb556187a6e</id>
+      <masked>false</masked>
+      <name>endpoint</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>397a2051-f447-4ced-9a4e-c9ce5a5a74dc</id>
+      <id>f07bc1b2-6f6a-484d-a90b-17d361c3ea12</id>
       <masked>false</masked>
       <name>token</name>
-   </variables>
-   <variables>
-      <defaultValue>'member-admin'</defaultValue>
-      <description></description>
-      <id>e3f70a07-6466-42ff-9733-3599d2e4bbdf</id>
-      <masked>false</masked>
-      <name>endpoint</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

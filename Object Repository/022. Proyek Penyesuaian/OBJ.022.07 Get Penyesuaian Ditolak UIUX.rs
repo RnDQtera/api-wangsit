@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.017.14 Get List E2E Sub modules Pending Mobile</name>
+   <name>OBJ.022.07 Get Penyesuaian Ditolak UIUX</name>
    <tag></tag>
-   <elementGuidId>07ff28a2-a1c7-4973-a9b6-47fd3fb11164</elementGuidId>
+   <elementGuidId>2fea4c51-b710-4814-8d2d-cd0261b644f5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -25,25 +25,17 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Accept</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>9499f9e7-5133-4f30-8f9f-49db7fc6724e</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>126ad325-19f9-457c-9cb0-262b0fc6c1eb</webElementGuid>
+      <webElementGuid>ba94504d-019f-43c2-a0ec-55945369ab7f</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${proyek_qc}${endpoint}</restUrl>
+   <restUrl>${proyek_penyesuaian}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -53,25 +45,25 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'/quality-control/670e212e16b06eea4e273433/development/mobile'</defaultValue>
+      <defaultValue>GlobalVariable.proyek_penyesuaian</defaultValue>
       <description></description>
-      <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
+      <id>32cf3df5-2eb9-43eb-8533-c9905d983315</id>
+      <masked>false</masked>
+      <name>proyek_penyesuaian</name>
+   </variables>
+   <variables>
+      <defaultValue>'/project-improvement/rejected/66e901c165b533fbe0c72c03/'</defaultValue>
+      <description></description>
+      <id>97b29a75-5dcc-4f11-b5fb-ffb556187a6e</id>
       <masked>false</masked>
       <name>endpoint</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>d8e48ae2-64e2-49a1-a626-809c2b59c24a</id>
+      <id>f07bc1b2-6f6a-484d-a90b-17d361c3ea12</id>
       <masked>false</masked>
       <name>token</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.proyek_qc</defaultValue>
-      <description></description>
-      <id>052f2831-caf8-401e-a9c0-01d9481218dc</id>
-      <masked>false</masked>
-      <name>proyek_qc</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
