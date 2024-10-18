@@ -119,6 +119,7 @@
       <initValue>'https://dev-api-project-access-resource.wangs.id/'</initValue>
       <name>proyek_akses_resource</name>
    </GlobalVariableEntity>
+<<<<<<< HEAD
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://dev-api-project-push-repository.wangs.id/'</initValue>
@@ -129,4 +130,6 @@
       <initValue>'https://dev-api-project-improvement.wangs.id/'</initValue>
       <name>proyek_penyesuaian</name>
    </GlobalVariableEntity>
+=======
+>>>>>>> 3953eb1e12d235c4a28b8dc8c9ec6730bd157ba7
 </GlobalVariableEntities>
