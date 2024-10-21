@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.014.006.Put Update Sub Module</name>
+   <name>OBJ.014.20 Get Sub Module List Penyesuaian</name>
    <tag></tag>
-   <elementGuidId>aa4778af-362c-4220-be0a-bcc96f459001</elementGuidId>
+   <elementGuidId>3a2c011b-72c0-4050-84f5-d1bdf8e28eca</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -16,23 +16,19 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>false</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;moduleId\&quot;: \&quot;66d8106db23684578bc69c79\&quot;,\n    \&quot;name\&quot;: \&quot;Sub Modul\&quot;,\n    \&quot;leaderId\&quot;: \&quot;66d166341ebe5344bc2b932e\&quot;,\n    \&quot;team\&quot;: {\n        \&quot;uiux\&quot;: [\&quot;66cd5c33c86e8e2de6b06c78\&quot;],\n        \&quot;qcWeb\&quot;: \&quot;66cd5c33c86e8e2de6b06c78\&quot;,\n        \&quot;qcMobile\&quot;: \&quot;66cd5c33c86e8e2de6b06c78\&quot;\n    }\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Accept</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>81611cf3-2a6b-4e96-bdab-3ef987b8f94c</webElementGuid>
+      <webElementGuid>1344d854-7346-46ec-bb01-e378baf4e079</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -40,21 +36,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>b65928a7-e553-4cb4-a676-3f4d6661b5a7</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Accept</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>d9ce79e5-4312-40e3-9f4b-d33cf6ec9ab5</webElementGuid>
+      <webElementGuid>4a32c4d3-d33d-4e2d-a7f4-559ee7593c57</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PUT</restRequestMethod>
+   <restRequestMethod>GET</restRequestMethod>
    <restUrl>${submodul}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -62,28 +50,28 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'66d52629da1f6ebdaa8e6243/project-detail/sub-module/66e161900d09dd43c7ba6693'</defaultValue>
+      <defaultValue>GlobalVariable.submodul</defaultValue>
       <description></description>
-      <id>03838825-c9ba-4d03-b57f-958697be01df</id>
+      <id>da0a0ac1-61e4-4757-b81b-5b484d2a3e7f</id>
       <masked>false</masked>
-      <name>endpoint</name>
+      <name>submodul</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>8cfe06ac-c345-401f-b241-473a98d12bbc</id>
+      <id>d621d0fe-af3b-4241-9646-63af1b246164</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.submodul</defaultValue>
+      <defaultValue>'670746bb4729771b164267b0/project-detail/sub-module'</defaultValue>
       <description></description>
-      <id>ed0b6dc7-588c-49b4-b138-7a82c829812f</id>
+      <id>9312004b-2f7e-4228-84cd-719d892ce426</id>
       <masked>false</masked>
-      <name>submodul</name>
+      <name>endpoint</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

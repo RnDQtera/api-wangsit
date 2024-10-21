@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.014.004.Get Existing Sub Module Process</name>
+   <name>OBJ.014.17 Get Sub Module Team Member Options</name>
    <tag></tag>
-   <elementGuidId>1008b044-0568-4338-bcaa-d44eda7c82f8</elementGuidId>
+   <elementGuidId>c6227b7c-38b6-4e41-9a1f-37a6e5d6019e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -16,8 +16,8 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>true</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <autoUpdateContent>false</autoUpdateContent>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
@@ -28,7 +28,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>48893ff0-3ff2-406e-93ef-9de57ee9bab2</webElementGuid>
+      <webElementGuid>bf8db9a2-74cb-4569-9c2e-66c6b0046e25</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -36,40 +36,40 @@
       <name>Accept</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>9cddc925-3086-45ce-be50-34cdf0993310</webElementGuid>
+      <webElementGuid>9499f9e7-5133-4f30-8f9f-49db7fc6724e</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${submodul}${endpoint}</restUrl>
+   <restUrl>${submodul}${endpoint}?member=true&amp;isAssign=true&amp;team=mobile</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'66d52629da1f6ebdaa8e6243/project-detail/sub-module/existing-process'</defaultValue>
+      <defaultValue>'670746bb4729771b164267b0/project-detail/sub-module/6711fdb085827e499609ae3d/member/options'</defaultValue>
       <description></description>
-      <id>b7a3f0a2-8f76-411e-b657-8da88e5f7b31</id>
+      <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>
       <name>endpoint</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>45863aa7-4ad5-4a39-b5e0-e488acea042a</id>
+      <id>d8e48ae2-64e2-49a1-a626-809c2b59c24a</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.submodul</defaultValue>
       <description></description>
-      <id>e68d53f2-3756-453e-959b-254d7fb48994</id>
+      <id>052f2831-caf8-401e-a9c0-01d9481218dc</id>
       <masked>false</masked>
       <name>submodul</name>
    </variables>

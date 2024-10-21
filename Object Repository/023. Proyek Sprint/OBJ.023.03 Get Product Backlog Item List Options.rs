@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Put Update Sub Module Leaders</name>
+   <name>OBJ.023.03 Get Product Backlog Item List Options</name>
    <tag></tag>
-   <elementGuidId>5f81c94f-cc25-4ae7-841c-41272708142e</elementGuidId>
+   <elementGuidId>c62de72b-2800-4aa1-9163-093501298ad5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;data\&quot;: [\n    {\n      \&quot;subModuleId\&quot;: \&quot;66e3e23c82bbbd1c31ea9bbf\&quot;,\n      \&quot;leaderId\&quot;: \&quot;66cc26e1289ea6d7989ae53c\&quot;\n    },\n    {\n      \&quot;subModuleId\&quot;: \&quot;66e3f7926e818666f4771dbd\&quot;,\n      \&quot;leaderId\&quot;: \&quot;66cc26e1289ea6d7989ae53c\&quot;\n    }\n  ]\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;pbiIds\&quot;: [\n    \&quot;6715f274556d2c5a406b2e10\&quot;\n  ]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -32,7 +32,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>b05adf1c-fac5-4921-bed2-0ae633f0a98b</webElementGuid>
+      <webElementGuid>9fbcb062-0667-411d-8d5c-335d22a27f90</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -40,7 +40,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>bf8db9a2-74cb-4569-9c2e-66c6b0046e25</webElementGuid>
+      <webElementGuid>fee6304a-6a2b-441e-8da4-39df0c7de8c1</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -48,14 +48,14 @@
       <name>Accept</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>9499f9e7-5133-4f30-8f9f-49db7fc6724e</webElementGuid>
+      <webElementGuid>f4128d8e-c35f-4f1a-96f6-d5cd916a9024</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${submodul}${endpoint}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${proyek_sprint}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -65,25 +65,25 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'66e901c165b533fbe0c72c03/project-detail/sub-module/leaders'</defaultValue>
+      <defaultValue>GlobalVariable.proyek_sprint</defaultValue>
       <description></description>
-      <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
+      <id>ed93d366-ebe9-47bc-b336-cc653d54b977</id>
       <masked>false</masked>
-      <name>endpoint</name>
+      <name>proyek_sprint</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>d8e48ae2-64e2-49a1-a626-809c2b59c24a</id>
+      <id>bbe06e5e-f469-4ea7-a3bb-a6a4a5eb2db4</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.submodul</defaultValue>
+      <defaultValue>'66e901c165b533fbe0c72c03/project-detail/sprint/product-backlog-item/options'</defaultValue>
       <description></description>
-      <id>052f2831-caf8-401e-a9c0-01d9481218dc</id>
+      <id>e10f4725-98eb-42ea-be86-0d2aaab0b91f</id>
       <masked>false</masked>
-      <name>submodul</name>
+      <name>endpoint</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

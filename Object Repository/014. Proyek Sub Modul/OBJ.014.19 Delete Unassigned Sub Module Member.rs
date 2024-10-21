@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.014.007.Get Sub Module Options</name>
+   <name>OBJ.014.19 Delete Unassigned Sub Module Member</name>
    <tag></tag>
-   <elementGuidId>e05c3d22-0544-479b-87d3-b354463bc0ca</elementGuidId>
+   <elementGuidId>b96a794c-0d0c-4a18-80c0-a0d74218e520</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -16,19 +16,31 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>true</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <autoUpdateContent>false</autoUpdateContent>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;memberId\&quot;: \&quot;66eb9159b3bb95576adbe994\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>412f5de3-edbf-4987-aef1-29fdbc4ae04f</webElementGuid>
+   </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>7d2130a6-27f5-486b-99e6-6ba4f8a0e7e6</webElementGuid>
+      <webElementGuid>bf8db9a2-74cb-4569-9c2e-66c6b0046e25</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -36,13 +48,13 @@
       <name>Accept</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>27fbe02f-5d3c-44b3-ae3d-4b9e428311b7</webElementGuid>
+      <webElementGuid>9499f9e7-5133-4f30-8f9f-49db7fc6724e</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>GET</restRequestMethod>
+   <restRequestMethod>DELETE</restRequestMethod>
    <restUrl>${submodul}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -50,26 +62,26 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'66d52629da1f6ebdaa8e6243/project-detail/sub-module/options'</defaultValue>
+      <defaultValue>'670746bb4729771b164267b0/project-detail/sub-module/6711fdb085827e499609ae3d/member/unassign/backend'</defaultValue>
       <description></description>
-      <id>84f3b1e4-dac9-46bd-b941-7219df763fda</id>
+      <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>
       <name>endpoint</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>860505e1-d0ae-4b9e-a3dd-be59312094c8</id>
+      <id>d8e48ae2-64e2-49a1-a626-809c2b59c24a</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.submodul</defaultValue>
       <description></description>
-      <id>9153b34d-c747-47de-8a66-d0016ae19dd8</id>
+      <id>052f2831-caf8-401e-a9c0-01d9481218dc</id>
       <masked>false</masked>
       <name>submodul</name>
    </variables>

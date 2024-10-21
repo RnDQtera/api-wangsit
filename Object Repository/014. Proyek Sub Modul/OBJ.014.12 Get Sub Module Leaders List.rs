@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Delete Sub Module Repository</name>
+   <name>OBJ.014.12 Get Sub Module Leaders List</name>
    <tag></tag>
-   <elementGuidId>6635ea22-e3ba-4412-81d2-e349ceabb95d</elementGuidId>
+   <elementGuidId>ec5b7bb2-cd23-4641-b87d-46cf6dcc3c35</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -20,20 +20,8 @@
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;team\&quot;: \&quot;backend\&quot;,\n  \&quot;name\&quot;: \&quot;settings-be\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>b05adf1c-fac5-4921-bed2-0ae633f0a98b</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -54,7 +42,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>DELETE</restRequestMethod>
+   <restRequestMethod>GET</restRequestMethod>
    <restUrl>${submodul}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -65,7 +53,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'66e901c165b533fbe0c72c03/project-detail/sub-module/66f2454d4d10271688a88747/repository/6705f825d33047f6157f823f'</defaultValue>
+      <defaultValue>'66e901c165b533fbe0c72c06/project-detail/sub-module/leaders'</defaultValue>
       <description></description>
       <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>

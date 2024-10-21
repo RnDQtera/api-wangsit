@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get Sub Module Existing Repository List</name>
+   <name>OBJ.014.09 Get Sub Module Existing Repository List</name>
    <tag></tag>
    <elementGuidId>7ddd4f25-9c73-400a-8ec4-47bc9d4a7774</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Create Sub Module Repository</name>
+   <name>OBJ.014.11 Delete Sub Module Repository</name>
    <tag></tag>
-   <elementGuidId>daa3f8a0-4fc7-49a5-b41e-fa7d35763957</elementGuidId>
+   <elementGuidId>6635ea22-e3ba-4412-81d2-e349ceabb95d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -54,7 +54,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
+   <restRequestMethod>DELETE</restRequestMethod>
    <restUrl>${submodul}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -65,7 +65,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'66e901c165b533fbe0c72c03/project-detail/sub-module/66f2454d4d10271688a88747/repository'</defaultValue>
+      <defaultValue>'66e901c165b533fbe0c72c03/project-detail/sub-module/66f2454d4d10271688a88747/repository/6705f825d33047f6157f823f'</defaultValue>
       <description></description>
       <id>ba3e3b48-d50b-4698-80f8-cf75dd316cfc</id>
       <masked>false</masked>
