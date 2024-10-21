@@ -129,4 +129,9 @@
       <initValue>'https://dev-api-project-improvement.wangs.id/'</initValue>
       <name>proyek_penyesuaian</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-team-member-kpi.wangs.id/'</initValue>
+      <name>kpi_member</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
