@@ -137,6 +137,6 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://dev-api-team-member-kpi.wangs.id/'</initValue>
-      <name>kpi_member</name>
+      <name>kpi_board</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
