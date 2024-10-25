@@ -139,4 +139,9 @@
       <initValue>'https://dev-api-team-member-kpi.wangs.id/'</initValue>
       <name>kpi_board</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-release-note.wangs.id/'</initValue>
+      <name>release_note</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
