@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.008.06 Get Sprint Approval Options</name>
+   <name>OBJ.008.07 Get Sprint Approval Request List</name>
    <tag></tag>
-   <elementGuidId>fe16dc8a-08fa-49ad-aeef-079cf26e3748</elementGuidId>
+   <elementGuidId>ac881f88-dd85-482e-a855-71612698ac94</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -59,7 +59,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'api/approval/66e901c165b533fbe0c72c03/sprint/options'</defaultValue>
+      <defaultValue>'api/approval/66e901c165b533fbe0c72c03/sprint/request'</defaultValue>
       <description></description>
       <id>31ba1f9a-376c-46e8-8d03-a9fdb25a7581</id>
       <masked>false</masked>
