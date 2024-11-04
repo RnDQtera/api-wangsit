@@ -144,4 +144,9 @@
       <initValue>'https://dev-api-release-note.wangs.id/'</initValue>
       <name>release_note</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTkwN2I1ZTY0NzEyYzRlNWViMTAxZCIsImlhdCI6MTcyNDM5NjcxOX0.fN36PI5NmD8kEHijYSVD27uC0hVAaX9JdLxjN1ZlfJs'</initValue>
+      <name>jwt_proyek</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
